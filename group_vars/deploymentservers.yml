@@ -1,11 +1,5 @@
-<<<<<<< HEAD
 user_dir: "/home/jenkins"
 app_port: 5000
-=======
-user_dir: "/home/azureuser"
-app_port: 8000
-app_user: azureuser
->>>>>>> 2d8568be4d8de0b733fad4283460f06dd988d9a9
 service:
   workingdir: "{{user_dir}}/django-project/myproject"
   execstart: "{{user_dir}}/django-project/myvenv/bin/gunicorn --access-logfile - --workers 3 --bind 0.0.0.0:8000 myproject.wsgi:application"
@@ -13,7 +7,6 @@ service:
 djangoservice:
   workingdir: "{{user_dir}}/django-project/myproject"
   execstart: "{{user_dir}}/django-project/myvenv/bin/gunicorn --access-logfile - --workers 3 --bind 0.0.0.0:8000 myproject.wsgi:application"
-
 
 
 app:
@@ -25,8 +18,4 @@ app:
 django:
   env:
     SECRET_KEY: 'sfvgbrh212131'
-<<<<<<< HEAD
     DATABASE_URL: 'postgresql://demouser:pass123@db01/demodb'
-=======
-    DATABASE_URL: 'postgresql://demouser:pass123@20.111.47.135/demodb'
->>>>>>> 2d8568be4d8de0b733fad4283460f06dd988d9a9
