@@ -1,1 +1,5 @@
 ansible_python_interpreter: /usr/bin/python3
+<<<<<<< HEAD
+=======
+app_user: vagrant
+>>>>>>> 2d8568be4d8de0b733fad4283460f06dd988d9a9
